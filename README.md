@@ -203,3 +203,11 @@ orderService )
 - basePackages = {"hello.core", "hello.service"} 이렇게 여러 시작 위치를 지정할 수도 있다.
 - basePackageClasses : 지정한 클래스의 패키지를 탐색 시작 위치로 지정한다.
 - 만약 지정하지 않으면 @ComponentScan 이 붙은 설정 정보 클래스의 패키지가 시작 위치가 된다
+
+# 컴포넌트 스캔 기본 대상
+- 컴포넌트 스캔은 @Component 뿐만 아니라 다음과 내용도 추가로 대상에 포함한다.
+- @Component : 컴포넌트 스캔에서 사용
+- @Controller : 스프링 MVC 컨트롤러에서 사용
+- @Service : 스프링 비즈니스 로직에서 사용
+- @Repository : 스프링 데이터 접근 계층에서 사용
+- @Configuration : 스프링 설정 정보에서 사용

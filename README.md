@@ -224,3 +224,11 @@ orderService )
 - ex) org\.example\.Default.*
 - CUSTOM: TypeFilter 이라는 인터페이스를 구현해서 처리
 - ex) org.example.MyTypeFilter
+
+
+# 다양한 의존관계 주입 방법
+- 의존관계 주입은 크게 4가지 방법이 있다.
+- 생성자 주입
+- 수정자 주입(setter 주입)
+- 필드 주입
+- 일반 메서드 주입

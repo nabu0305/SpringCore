@@ -10,8 +10,19 @@ import spring.core.member.MemoryMemberRepository;
 
 public class OrderServiceImpl implements OrderService{
 
-    private final MemberRepository memberRepository;
-    private final DiscountPoilcy discountPoilcy;
+    private MemberRepository memberRepository;
+    private DiscountPoilcy discountPoilcy;
+
+
+    @Autowired
+    public void setMemberRepository(MemberRepository memberRepository){
+        this.memberRepository = memberRepository;
+    }
+
+    @Autowired
+    public void setDiscountPoilcy(DiscountPoilcy discountPoilcy){
+        this.discountPoilcy = discountPoilcy;
+    }
 
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPoilcy discountPoilcy) {
